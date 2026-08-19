@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleek AI Deck | PT Foods Beverages Indonesia (Kawan Lama Group)</title>
+  <meta name="description" content="Fleek AI Promotional & Loyalty Engine Presentation Deck for PT Foods Beverages Indonesia (Kawan Lama Group).">
+  <link rel="stylesheet" href="styles.css?v=2.1">
+  <style>
+    /* Custom Brand Additions for F&B Indonesia Full Deck */
+    .brand-badge-fbid {
+      background: linear-gradient(135deg, #FF0033 0%, #b30024 100%);
+      color: #ffffff;
+      font-family: var(--font-outfit);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.6rem;
+    }
+    .pricing-tier-tag {
+      font-family: var(--font-outfit);
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 8px;
+      border-radius: 3px;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+    .pricing-tier-tag.starter { background: #1E293B; color: #38BDF8; }
+    .pricing-tier-tag.pro { background: #047857; color: #4ADE80; }
+    .pricing-tier-tag.ultimate { background: #1D4ED8; color: #BFDBFE; }
+    .pricing-tier-tag.buyout { background: #3B0764; color: #E9D5FF; }
+
+    .quotation-badge {
+      background: rgba(255, 0, 51, 0.12);
+      border: 1px solid var(--home-accent);
+      color: var(--home-fg-1);
+      font-size: 0.75rem;
+      padding: 6px 12px;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CRT Scanline Grid Overlay -->
+  <div class="crt-scanlines"></div>
+
+  <!-- Slide Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- Floating Controls (Top Right) -->
+  <header class="controls-header">
+    <button id="themeToggleBtn" class="btn-cyber" title="Ganti Tema">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2"></path>
+        <path d="M12 20v2"></path>
+        <path d="M4.93 4.93l1.41 1.41"></path>
+        <path d="M17.66 17.66l1.41 1.41"></path>
+        <path d="M2 12h2"></path>
+        <path d="M20 12h2"></path>
+        <path d="M6.34 17.66l-1.41 1.41"></path>
+        <path d="M19.07 4.93l-1.41 1.41"></path>
+      </svg>
+      <span>Tema</span>
+    </button>
+    <button id="printBtn" class="btn-cyber" title="Print to PDF">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+        <rect x="6" y="14" width="12" height="8"></rect>
+      </svg>
+      <span>Print</span>
+    </button>
+    <button id="navToggleBtn" class="btn-cyber active" title="Menu Navigasi">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span>Navigasi</span>
+    </button>
+  </header>
+
+  <!-- Sidebar Drawer Navigation -->
+  <div id="navOverlay" class="navbar-drawer-overlay"></div>
+  <nav id="navDrawer" class="navbar-drawer">
+    <ul class="nav-links">
+      <li><a href="#opening" class="nav-link active"><span class="number">01</span> Opening</a></li>
+      <li><a href="#painpoint" class="nav-link"><span class="number">02</span> Strategic Overview (4 Pilar)</a></li>
+      <li><a href="#project1" class="nav-link"><span class="number">03</span> Weather Autopilot Promo</a></li>
+      <li><a href="#project2" class="nav-link"><span class="number">04</span> Official WA Meta Broadcast</a></li>
+      <li><a href="#project3" class="nav-link"><span class="number">05</span> Unified Command Portal</a></li>
+      <li><a href="#project4" class="nav-link"><span class="number">06</span> Dormant &amp; Cross-Brand AI</a></li>
+      <li><a href="#timeline" class="nav-link"><span class="number">07</span> Implementation Roadmap</a></li>
+      <li><a href="#schema" class="nav-link"><span class="number">08</span> Commercial Schemes</a></li>
+      <li><a href="#tablize" class="nav-link"><span class="number">09</span> Quotation Matrix (082 &amp; 084)</a></li>
+      <li><a href="#emailblast" class="nav-link"><span class="number">10</span> Single Offer: Email Blasting</a></li>
+      <li><a href="#signed" class="nav-link"><span class="number">11</span> Sign-Off</a></li>
+      <li>
+        <a href="#itbrief" class="nav-link locked-link" id="navItBrief">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          IT Team Brief
+        </a>
+      </li>
+    </ul>
+    <div class="nav-drawer-footer">
+      CONFIDENTIAL - PT FLEEK GROUP INDONESIA<br>
+      F&B INDONESIA EDITION (KAWAN LAMA GROUP)
+    </div>
+  </nav>
+
+  <!-- Slideshow Wrapper Container -->
+  <div class="slides-container">
+
+    <!-- SLIDE 1: Opening -->
+    <section id="opening" class="slide-panel active-slide section-opening">
+      <div class="section-content">
+        <div class="opening-title-container">
+          <span class="brand-badge-fbid">KAWAN LAMA GROUP // F&B INDONESIA EDITION</span>
+          <span class="opening-label">Technical &amp; Commercial Deck</span>
+          <h1 class="opening-title animate-text" id="clientNameHeader">Fleek AI Engine</h1>
+          <p class="opening-subtitle">Prepared for PT Foods Beverages Indonesia (Attn: Arianti Setiarini) // August 2026</p>
+          <p class="opening-extra-text">
+            Arsitektur promosi &amp; re-engagement otonom 100% Autopilot berbasis sensor <b>AI Weather &amp; Time-Based Trigger</b>, pengiriman promosi resmi <b>Official WhatsApp Meta Marketing Broadcast</b>, serta <b>Dormant Member Win-Back Engine (Gemini LLM)</b> untuk Chatime, Cupbop, Gindaco, &amp; GoGoCurry.
+          </p>
+        </div>
+      </div>
+
+      <!-- Infinite Client Marquee Banner -->
+      <div class="marquee-container">
+        <div class="marquee-content">
+          <span>Chatime</span>
+          <span>Cupbop</span>
+          <span>Gindaco</span>
+          <span>GoGoCurry</span>
+          <span>Chatime Atea</span>
+          <span>Chatime Express</span>
+          <span>PT Foods Beverages Indonesia</span>
+          <span>Kawan Lama Group</span>
+          <span>Fleek Automation Engine</span>
+          <span>Fleek WhatsApp Gateway</span>
+          <span>Fleek Intelligent Core</span>
+          <span>Weather &amp; Time Autopilot AI</span>
+          <span>Official WA Meta Broadcast</span>
+          <span>RFM Dormant Re-Engagement</span>
+          <!-- Duplicate for seamless loop -->
+          <span>Chatime</span>
+          <span>Cupbop</span>
+          <span>Gindaco</span>
+          <span>GoGoCurry</span>
+          <span>Chatime Atea</span>
+          <span>Chatime Express</span>
+          <span>PT Foods Beverages Indonesia</span>
+          <span>Kawan Lama Group</span>
+          <span>Fleek Automation Engine</span>
+          <span>Fleek WhatsApp Gateway</span>
+          <span>Fleek Intelligent Core</span>
+          <span>Weather &amp; Time Autopilot AI</span>
+          <span>Official WA Meta Broadcast</span>
+          <span>RFM Dormant Re-Engagement</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: Strategic Overview (5 AI Agents across 4 Pillars) -->
+    <section id="painpoint" class="slide-panel">
+      <div class="section-content">
+        <span class="sect-meta">// SYS_ANALYSIS: STRATEGIC OVERVIEW (5 AI AGENTS)</span>
+        <h2 class="painpoint-question animate-text" id="painpointQuestion">
+          Bagaimana cara F&amp;B Indonesia merebut kembali omset pasif &amp; mendorong konversi belanja tanpa waste budget?
+        </h2>
+        
+        <div>
+          <h3 class="painpoint-subtitle">4 Pilar Solusi Autopilot (Didukung 5 AI Agents Terintegrasi):</h3>
+          <ul class="painpoint-list">
+
+            <!-- Pilar 01 (Connects to Slide 03 Demo) -->
+            <li class="painpoint-item cyber-decor">
+              <span class="painpoint-item-num">01.</span>
+              <h4>Weather &amp; Context Promo (AI Agent #2)</h4>
+              <p>Mendeteksi cuaca terik &gt;32°C &amp; momentum jam makan siang untuk memicu promo minuman dingin/segar otomatis via Email &amp; App.</p>
+              <span class="painpoint-badge-pill">☀️ Trigger Suhu Terik // Demo 01 (Slide 03)</span>
+            </li>
+
+            <!-- Pilar 02 (Connects to Slide 04 Demo) -->
+            <li class="painpoint-item cyber-decor">
+              <span class="painpoint-item-num">02.</span>
+              <h4>Official WA Broadcast (AI Agent #3)</h4>
+              <p>Menyiarkan promo gambar + tombol CTA secara massal via Akun Resmi WhatsApp Centang Biru <em>Chatime Loyalty</em> tanpa risiko terblokir.</p>
+              <span class="painpoint-badge-pill">💬 Meta WABA Verified // Demo 02 (Slide 04)</span>
+            </li>
+
+            <!-- Pilar 03 (Connects to Slide 05 Demo) -->
+            <li class="painpoint-item cyber-decor">
+              <span class="painpoint-item-num">03.</span>
+              <h4>Unified Command Portal (AI Agent #1)</h4>
+              <p>Dashboard analitik satu pintu memetakan Menu DNA &amp; performa omset 4 brand (Chatime, Cupbop, Gindaco, GoGoCurry) secara real-time.</p>
+              <span class="painpoint-badge-pill">📊 POS Sync &amp; Insights // Demo 03 (Slide 05)</span>
+            </li>
+
+            <!-- Pilar 04 (Connects to Slide 06 Demo) -->
+            <li class="painpoint-item cyber-decor">
+              <span class="painpoint-item-num">04.</span>
+              <h4>Win-Back &amp; Cross-Brand (AI Agent #4 &amp; #5)</h4>
+              <p>Gemini LLM menarik kembali member pasif &gt;30 hari via voucher bertingkat &amp; merekomendasikan bundling silang antar brand F&amp;B.</p>
+              <span class="painpoint-badge-pill">🔄 Retensi &amp; Sinergi // Demo 04 (Slide 06)</span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: Proposed Project 1 (AI Agent #2 - Weather & Context + Chatime Promo) -->
+    <section id="project1" class="slide-panel">
+      <div class="section-content">
+        <span class="sect-meta">// SYS_PROPOSAL: DEMO_01 [CHANNEL: EMAIL BLASTING / GMAIL ENGINE]</span>
+        <div class="project-header">
+          <span class="project-tag">AI Agent #2 • Weather Autopilot (Email / Gmail Engine)</span>
+          <h2 class="project-name animate-text" id="proj1Name">Weather &amp; Context Promo Engine</h2>
+        </div>
+        
+        <div class="project-layout">
+          <div class="project-info">
+            <p class="project-description" id="proj1Desc">
+              Engine pengiriman promo <b>Email Massal (Gmail/Inbox Relay)</b> cerdas yang terhubung dengan sensor cuaca real-time (OpenWeather API) dan Gemini LLM untuk memicu pengiriman promosi Chatime &amp; GoGoCurry secara otomatis sesuai lokasi &amp; suhu lokal pelanggan.
+            </p>
+            <div>
+              <h4 class="project-features-title">Fitur-fitur Utama:</h4>
+              <ul class="project-features">
+                <li>Trigger otomatis saat suhu Jakarta/Bandung >32°C (Terik) atau saat momentum promo weekend.</li>
+                <li>Email Delivery Infrastructure &amp; Dedicated IP Pool dengan jaminan 100% Clean Delivery (SPF, DKIM, DMARC).</li>
+                <li>Personalisasi data pelanggan interaktif (nama member, lokasi cabang terdekat, varian boba favorit).</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- High Fidelity Email Mockup Client Card -->
+          <div class="project-demo-frame cyber-decor">
+            <!-- Weather Sensor Status Bar -->
+            <div class="weather-telemetry-bar">
+              <span class="pulse-green-dot"></span>
+              <span>LIVE IOT SENSOR: DKI JAKARTA 33.8°C (PANAS TERIK) // AUTO-DISPATCH ACTIVE</span>
+            </div>
+            <div class="gmail-mock">
+              <div class="gmail-header">
+                <div class="gmail-dots">
+                  <div class="gmail-dot red"></div>
+                  <div class="gmail-dot yellow"></div>
+                  <div class="gmail-dot green"></div>
+                </div>
+                <div class="gmail-subject">Chatime Weekend Treat: Buy 1 Get 1 Large Milk Tea! 🥤💜</div>
+              </div>
+              <div class="gmail-envelope">
+                <div><span>Dari:</span> Chatime Indonesia &lt;no-reply@fbindonesia.co.id&gt;</div>
+                <div><span>Kepada:</span> arianti.setiarini@kawanlamagroup.com</div>
+              </div>
+              <div class="gmail-body">
+                <div class="email-newsletter-card">
+                  <!-- Visual Banner Graphic -->
+                  <div class="chatime-promo-visual-card">
+                    <div class="blu-partner-badge">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg>
+                      CHATIME WEEKEND SPECIAL 🧋
+                    </div>
+                    <div style="font-family:var(--font-outfit); font-size:1.15rem; font-weight:900; color:#FFFFFF; margin-bottom:4px;">
+                      BUY 1 GET 1 LARGE! 🥤💜
+                    </div>
+                    <div style="font-size:0.8rem; color:#E9D5FF;">
+                      Varian Chatime Milk Tea / Hazelnut Chocolate di My F&amp;B ID App!
+                    </div>
+                  </div>
+
+                  <div class="email-brand-logo">CHATIME // F&amp;B INDONESIA</div>
+                  <div class="email-product-promo" style="margin-top:8px;">
+                    <span class="email-promo-tag">Promo Weekend Spesial Sahabat Chatime!</span>
+                    <span class="email-promo-desc">
+                      Halo Sahabat Chatime! Sambut weekend dengan kesegaran boba favoritmu. Dapatkan <b>FREE 1 Chatime Milk Tea (L)</b> setiap pembelian 1 varian signature di Aplikasi My F&amp;B ID atau outlet terdekat.<br><br>
+                      Gunakan kode voucher saat checkout atau tunjukkan di kasir:
+                    </span>
+                  </div>
+                  
+                  <!-- Interactive Voucher Copy Strip -->
+                  <div class="voucher-copy-strip" onclick="copyVoucherCode('CHATIMEB1G1')">
+                    <span>KODE VOUCHER: <strong>CHATIMEB1G1</strong></span>
+                    <button class="btn-copy-code" type="button">📋 SALIN KODE</button>
+                  </div>
+
+                  <button class="email-promo-btn" style="background:#7e22ce;" onclick="triggerToast('🚀 Mengarahkan ke Aplikasi My F&B ID...')">Order via My F&amp;B ID App</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: Proposed Project 2 (AI Agent #3 - Official WA Meta Marketing Broadcast) -->
+    <section id="project2" class="slide-panel">
+      <div class="section-content">
+        <span class="sect-meta">// SYS_PROPOSAL: DEMO_02 [CHANNEL: OFFICIAL WHATSAPP META WABA]</span>
+        <div class="project-header">
+          <span class="project-tag">AI Agent #3 • WhatsApp Meta Broadcast (Akun Resmi Centang Biru)</span>
+          <h2 class="project-name animate-text" id="proj2Name">Official WA Broadcast Promo Engine</h2>
+        </div>
+        
+        <div class="project-layout">
+          <div class="project-info">
+            <p class="project-description" id="proj2Desc">
+              Engine pengiriman pesan broadcast marketing resmi bertanda centang biru (Meta WABA Connector) yang menyiarkan promo Chatime secara massal langsung ke WhatsApp pelanggan dengan format media kaya (Gambar Poster + Copy Teks Promo + Tombol CTA "Order Sekarang").
+            </p>
+            <div>
+              <h4 class="project-features-title">Fitur-fitur Utama:</h4>
+              <ul class="project-features">
+                <li>Official Verified Account: Pesan dikirimkan atas nama akun resmi <b>Chatime Loyalty</b> bertanda centang biru.</li>
+                <li>Rich Media &amp; Interactive Button: Dilengkapi gambar poster promo menarik &amp; tombol CTA interaktif ("Order Sekarang").</li>
+                <li>Multi-Bubble Safe Rate Limits: Pengiriman massal teratur tanpa hambatan dengan statistik open rate transparan.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- High Fidelity WhatsApp Broadcast Mockup Card -->
+          <div class="project-demo-frame cyber-decor">
+            <div class="wa-broadcast-card">
+              <!-- WhatsApp Header -->
+              <div class="wa-broadcast-header">
+                <div class="wa-header-left">
+                  <div class="wa-avatar">C</div>
+                  <div class="wa-account-info">
+                    <span class="wa-account-name">
+                      Chatime Loyalty
+                      <svg class="wa-verified-badge" width="16" height="16" viewBox="0 0 24 24" fill="#53bdeb"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="wa-header-right">
+                  <span class="wa-icon-btn" title="Cari Pesan">🔍</span>
+                  <span class="wa-icon-btn" title="Menu Opsi">⋮</span>
+                </div>
+              </div>
+
+              <div class="project-demo-frame cyber-decor">
+            <div class="fleek-sales-bot-card">
+              <!-- Header -->
+              <div class="fsb-header">
+                <div class="fsb-header-left">
+                  <div class="fsb-avatar" style="background:#7E22CE;">C</div>
+                  <div class="fsb-title-group">
+                    <span class="fsb-title">Chatime Loyalty <svg class="wa-verified-badge" width="14" height="14" viewBox="0 0 24 24" fill="#53bdeb"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span>
+                    <span class="fsb-status"><span style="font-size:10px;">●</span> Online</span>
+                  </div>
+                </div>
+                <div class="fsb-header-right">
+                  <span class="fsb-header-badge">AI AGENT</span>
+                </div>
+              </div>
+
+              <!-- Chat Body -->
+              <div class="fsb-chat-body">
+                <!-- AI Incoming Promo -->
+                <div class="fsb-bubble-container incoming">
+                  <div class="fsb-bubble incoming">
+                    <div class="fsb-banner-img-container">
+                      <img src="chatime_promo_banner.jpg" alt="Chatime Promo Double Cup" class="fsb-banner-img">
+                    </div>
+                    <b>Double Cup, Double Happiness Chatime 🥤💜</b><br><br>
+                    Dapatkan <b>PROMO BUY 1 GET 1 LARGE</b> untuk pembayaran via Aplikasi My F&amp;B ID atau via QRIS di outlet terdekat.
+                    
+                    <button class="fsb-action-btn" type="button" onclick="triggerToast('🧋 Mengarahkan ke Aplikasi My F&amp;B ID...')">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                      Order Sekarang
+                    </button>
+                  </div>
+                </div>
+
+                <!-- User Outgoing -->
+                <div class="fsb-bubble-container outgoing">
+                  <span class="fsb-leads-badge">Leads: HOT</span>
+                  <div class="fsb-bubble outgoing">
+                    Bisa dipakai di Grand Indo?
+                  </div>
+                </div>
+
+                <!-- AI Incoming Fallback -->
+                <div class="fsb-bubble-container incoming">
+                  <div class="fsb-bubble incoming">
+                    Maaf pesan tidak dikenali harap menghubungi CS.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Footer -->
+              <div class="fsb-footer">
+                <div class="fsb-input-wrapper">
+                  <div class="fsb-input-mock">Ketik balasan Anda di sini...</div>
+                  <div class="fsb-send-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="22" y1="2" x2="11" y2="13"></line>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: Proposed Project 3 (AI Agent #1 - Unified Dashboard & Menu DNA) -->
+    <section id="project3" class="slide-panel">
+      <div class="section-content">
+        <span class="sect-meta">// SYS_PROPOSAL: DEMO_03 [CHANNEL: EXECUTIVE BI DASHBOARD &amp; AI PREDICTOR]</span>
+        <div class="project-header">
+          <span class="project-tag">AI Agent #1 • BI Analytics &amp; Menu DNA (Executive Dashboard)</span>
+          <h2 class="project-name animate-text" id="proj3Name">Unified F&amp;B Command Portal</h2>
+        </div>
+        
+        <div class="project-layout">
+          <div class="project-info">
+            <p class="project-description" id="proj3Desc">
+              Dashboard analitik satu pintu yang menggabungkan seluruh data transaksi POS F&amp;B Indonesia, performa blast email, dan WhatsApp C2WA ke dalam visualisasi real-time untuk laporan Board of Directors.
+            </p>
+            <div>
+              <h4 class="project-features-title">Fitur-fitur Utama:</h4>
+              <ul class="project-features">
+                <li>Real-time POS Transaction Sync API (`/api/v1/pos/transaction-sync`) untuk melacak konversi rupiah.</li>
+                <li>Control Panel Dual-Mode (Internal Operational View vs Client Executive Facing View).</li>
+                <li>Ekspor Laporan Naratif Senin (Monday Revenue Report via WA) berisi 3 Wins &amp; ROI highlights.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- High Fidelity Analytics Dashboard Mockup Card -->
+          <div class="project-demo-frame cyber-decor">
+            <div class="dashboard-mock">
+              <div class="dashboard-header">
+                <span class="dashboard-logo">F&amp;B ID COMMAND PORTAL</span>
+                <span style="font-size: 0.65rem; color: #00ff66; font-family: monospace;">POS_SYNC // ONLINE</span>
+              </div>
+              <div class="dashboard-kpi-grid">
+                <div class="dashboard-kpi-card">
+                  <div class="dashboard-kpi-val">500.000</div>
+                  <div class="dashboard-kpi-lbl">Email / Bln</div>
+                </div>
+                <div class="dashboard-kpi-card">
+                  <div class="dashboard-kpi-val">99.8%</div>
+                  <div class="dashboard-kpi-lbl">Inbox Delivery</div>
+                </div>
+                <div class="dashboard-kpi-card">
+                  <div class="dashboard-kpi-val">+24.8%</div>
+                  <div class="dashboard-kpi-lbl">POS Revenue</div>
+                </div>
+              </div>
+              <div class="dashboard-chart-area">
+                <div class="dashboard-chart-header">
+                  <span>BRAND ENGAGEMENT TRAFFIC</span>
+                  <span class="live-status-pill" id="livePulseStatus" title="Klik untuk Jeda/Mulai Live Wave">
+                    <span class="pulse-green-dot"></span> LIVE AUTO-WAVE
+                  </span>
+                </div>
+                <div class="dashboard-bars" id="dashboardBarsContainer">
+                  <div class="dashboard-bar-wrapper" data-brand="Chatime">
+                    <div class="bar-val-badge" id="badgeChatime">92%</div>
+                    <div class="dashboard-bar-track" data-target="barChatime">
+                      <div class="dashboard-bar" id="barChatime" data-height="92" style="background: linear-gradient(180deg, #FF0033 0%, #99001f 100%);"></div>
+                    </div>
+                    <span class="dashboard-bar-label">Chatime</span>
+                  </div>
+                  <div class="dashboard-bar-wrapper" data-brand="Cupbop">
+                    <div class="bar-val-badge" id="badgeCupbop">78%</div>
+                    <div class="dashboard-bar-track" data-target="barCupbop">
+                      <div class="dashboard-bar" id="barCupbop" data-height="78" style="background: linear-gradient(180deg, #FF0033 0%, #99001f 100%);"></div>
+                    </div>
+                    <span class="dashboard-bar-label">Cupbop</span>
+                  </div>
+                  <div class="dashboard-bar-wrapper" data-brand="Gindaco">
+                    <div class="bar-val-badge" id="badgeGindaco">65%</div>
+                    <div class="dashboard-bar-track" data-target="barGindaco">
+                      <div class="dashboard-bar" id="barGindaco" data-height="65" style="background: linear-gradient(180deg, #FF0033 0%, #99001f 100%);"></div>
+                    </div>
+                    <span class="dashboard-bar-label">Gindaco</span>
+                  </div>
+                  <div class="dashboard-bar-wrapper" data-brand="GoGoCurry">
+                    <div class="bar-val-badge" id="badgeGoGoCurry">84%</div>
+                    <div class="dashboard-bar-track" data-target="barGoGoCurry">
+                      <div class="dashboard-bar" id="barGoGoCurry" data-height="84" style="background: linear-gradient(180deg, #FF0033 0%, #99001f 100%);"></div>
+                    </div>
+                    <span class="dashboard-bar-label">GoGoCurry</span>
+                  </div>
+                </div>
+
+                <!-- AI Predictive Insight Widget -->
+                <div class="ai-predictive-widget">
+                  <span style="font-size: 1.2rem;">🤖</span>
+                  <div>
+                    <strong style="color:#c084fc; font-family:var(--font-outfit);">AI PREDICTIVE INSIGHT:</strong>
+                    <span>Terdeteksi 12.400 member pasif Chatime &gt;30 hari &amp; estimasi suhu 33°C jam 14:00 WIB. Auto-pemicu 'Weekend Treat Buy 1 Get 1' terproyeksi merebut omset Rp 84.500.000.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-footer">
+                SECURITY &amp; NDA CONTROLS ACTIVE // DUAL-MODE READY
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6: Dormant & Cross-Brand AI -->
+    <section id="project4" class="slide-panel">
+      <div class="section-content">
+        <span class="sect-meta">// SYS_RETENTION: DEMO_04 [CHANNEL: GEMINI LLM DUAL-TRIGGER RETENTION]</span>
+        <div class="project-header">
+          <span class="project-tag">AI Agents #4 &amp; #5 • Retention &amp; Synergy (Gemini LLM)</span>
+          <h2 class="project-name animate-text">Dormant Win-Back &amp; Cross-Brand AI</h2>
+        </div>
+        
+        <div class="schema-grid">
+          <!-- Card 1: Win-Back AI -->
+          <div class="schema-card cyber-decor">
+            <div class="schema-card-header">
+              <span class="schema-badge">AI Agent #5</span>
+              <h3 class="schema-name">Dormant Member Win-Back AI (Gemini LLM)</h3>
+            </div>
+            <p class="schema-desc">
+              Sistem otonom berbasis Gemini LLM yang memindai database POS untuk mengidentifikasi member F&amp;B pasif (&gt;30 hari tidak belanja) dan mengirimkan rantaian pesan voucher penarik minat secara bertingkat.
+            </p>
+            <ul class="schema-details">
+              <li><strong>Step 1 (Day 1 Churn):</strong> Auto-trigger Email Diskon 15% <em>"We Miss You"</em>.</li>
+              <li><strong>Step 2 (Day 5 Pasif):</strong> Auto-trigger Voucher Free Drink Upgrade.</li>
+              <li><strong>Step 3 (Day 10 Final):</strong> Final Call Voucher Diskon 30% Kuota Terbatas.</li>
+              <li><strong>POS Interceptor:</strong> Menghentikan sisa sequence otomatis saat transaksi kasir terdeteksi.</li>
+            </ul>
+          </div>
+          
+          <!-- Card 2: Cross-Brand Synergy -->
+          <div class="schema-card cyber-decor">
+            <div class="schema-card-header">
+              <span class="schema-badge">AI Agent #4</span>
+              <h3 class="schema-name">Cross-Brand Synergy Engine</h3>
+            </div>
+            <p class="schema-desc">
+              Mesin rekomendasi silang antar-brand F&amp;B Indonesia (Chatime × Cupbop × Gindaco) untuk menaikkan Average Order Value (AOV) pelanggan saat santap siang dan malam.
+            </p>
+            <ul class="schema-details">
+              <li>Penawaran paket combo bundling minuman + makanan secara cerdas.</li>
+              <li>Visual poster promo dinamis menyesuaikan tren rasa terkini.</li>
+              <li>Pelaporan konversi omset silang antar cabang real-time.</li>
+              <li>Integrasi ke CRM My F&amp;B ID untuk akumulasi poin multi-brand.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7: Timeline (12-Week Roadmap) -->
+    <section id="timeline" class="slide-panel">
+      <div class="section-content">
+        <span class="sect-meta">// SYS_ROADMAP: 12-WEEK  IMPLEMENTATION</span>
+        <div class="project-header">
+          <span class="project-tag">Jadwal Implementation (3 Bulan)</span>
+          <h2 class="project-name animate-text">12 Minggu Roadmap</h2>
+        </div>
+        
+        <div class="timeline-container">
+          <div class="timeline-project-track cyber-decor">
+            <h4 class="timeline-project-title">Rollout Timeline: Fleek AI Engine (Q3/Q4 Rollout — 3 Bulan Penuh)</h4>
+            <div class="timeline-pipeline">
+              
+              <!-- Bulan 1 -->
+              <div class="timeline-step">
+                <div class="timeline-node"></div>
+                <div class="timeline-step-meta">Bulan 1 (Mgg 1–3)</div>
+                <h5 class="timeline-step-title">Infra &amp; IP Warming</h5>
+                <p class="timeline-step-desc">Konfigurasi DNS (SPF/DKIM/DMARC), Dedicated IP Pool, verifikasi Meta WABA verified, &amp; warming reputasi email.</p>
+              </div>
+
+              <!-- Bulan 2 Awal -->
+              <div class="timeline-step">
+                <div class="timeline-node"></div>
+                <div class="timeline-step-meta">Bulan 2 (Mgg 4–6)</div>
+                <h5 class="timeline-step-title">AI Engine &amp; Prompts</h5>
+                <p class="timeline-step-desc">Penyambungan OpenWeather API, prompt tuning Gemini LLM, &amp; perakitan logika 3-Step Win-Back Drip sequence.</p>
+              </div>
+
+              <!-- Bulan 2 Akhir - 3 Awal -->
+              <div class="timeline-step">
+                <div class="timeline-node"></div>
+                <div class="timeline-step-meta">Bulan 2–3 (Mgg 7–9)</div>
+                <h5 class="timeline-step-title">POS Sync &amp; Demo UAT</h5>
+                <p class="timeline-step-desc">Penyambungan API POS `/api/v1/pos/transaction-sync`, setup BI Command Portal, &amp; demo uji coba UAT outlet terpilih.</p>
+              </div>
+
+              <!-- Bulan 3 Akhir -->
+              <div class="timeline-step">
+                <div class="timeline-node success"></div>
+                <div class="timeline-step-meta" style="color:#00ff66;">Bulan 3 (Mgg 10–12)</div>
+                <h5 class="timeline-step-title" style="color:#00ff66;">Full Go-Live &amp; Handover</h5>
+                <p class="timeline-step-desc">Peluncuran nasional seluruh outlet F&amp;B Indonesia, aktivasi garansi SLA 24/7, training tim, &amp; executive handover.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 8: Commercial Schemes -->
+    <section id="schema" class="slide-panel">
+      <div class="section-content">
+        <span class="sect-meta">// SYS_CONTRACT: SKEMA KERJASAMA</span>
+        <div class="project-header">
+          <span class="project-tag">Model Komersial</span>
+          <h2 class="project-name animate-text">Opsi Skema Investasi System</h2>
+        </div>
+        
+        <div class="schema-grid">
+          <!-- Skema 1 -->
+          <div class="schema-card cyber-decor">
+            <div class="schema-card-header">
+              <span class="schema-badge">Opsi 01 (Recommended)</span>
+              <h3 class="schema-name">Managed Service (Subscription)</h3>
+            </div>
+            <p class="schema-desc">
+              Skema langganan otonom di mana tim Fleek Squad mengurus 100% operasional server, reputasi IP, dan eksekusi pengiriman tanpa investasi modal awal (Zero Effort Subscription).
+            </p>
+            <ul class="schema-details">
+              <li>Pilihan Paket S Essentials (Rp 10,5M/bln), Paket M Recommended (Rp 19M/bln), atau Paket L Ultimate (Rp 28M/bln).</li>
+              <li>Termasuk jaminan 100% Clean Delivery &amp; Dedicated IP Pool.</li>
+              <li>Free 1 Bulan Garansi SLA Maintenance &amp; Support 24/7.</li>
+            </ul>
+          </div>
+          
+          <!-- Skema 2 -->
+          <div class="schema-card cyber-decor">
+            <div class="schema-card-header">
+              <span class="schema-badge">Opsi 02 (Buyout)</span>
+              <h3 class="schema-name">One-Time Setup ()</h3>
+            </div>
+            <p class="schema-desc">
+              Sistem beli putus di mana infrastruktur Fleek Engine di-deploy penuh di server VPC privat F&amp;B Indonesia dengan hak milik lisensi 100% permanen &amp; kuota unlimited.
+            </p>
+            <ul class="schema-details">
+              <li>Biaya Jasa Setup Rp 84.000.000 (Grand Total Rp 93.240.000 incl. 11% PPN &amp; 1 Bln SLA).</li>
+              <li>Full access &amp; control terhadap source code di privat server perusahaan.</li>
+              <li>Dukungan Maintenance SLA Retainer Opsional Rp 8.500.000 / bulan.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 9: Quotation Matrix -->
+    <section id="tablize" class="slide-panel">
+      <div class="section-content">
+        <span class="sect-meta">// SYS_FINANCIAL: OFFICIAL QUOTATION</span>
+        <div class="project-header">
+          <div class="quotation-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            <span>QUOTATION NO. 082/FLK-QUO/VIII/2026 &amp; NO. 084/FLK-QUO/VIII/2026</span>
+          </div>
+          <h2 class="project-name animate-text">Matriks Penawaran Harga Resmi</h2>
+        </div>
+        
+        <div class="table-wrapper-container">
+          <div class="table-scroll-hint">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+            <span>Geser untuk melihat detail perbandingan paket</span>
+          </div>
+          
+          <div class="table-wrapper cyber-decor">
+            <table class="cyber-table">
+              <thead>
+                <tr>
+                  <th>Fitur &amp; Scope Layanan</th>
+                  <th><span class="pricing-tier-tag starter">Essentials</span><br>Paket S </th>
+                  <th><span class="pricing-tier-tag pro">Recommended ⭐</span><br>Paket M Pro </th>
+                  <th><span class="pricing-tier-tag ultimate">Flagship ⭐</span><br>Paket L Ultimate </th>
+                  <th><span class="pricing-tier-tag buyout">Buyout 🏛️</span><br>One-Time Setup </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="proj-name">Investasi Biaya</td>
+                  <td class="price">IDR 10.500.000 / bln</td>
+                  <td class="price">IDR 19.000.000 / bln</td>
+                  <td class="price" style="color:#4ADE80;">IDR 28.000.000 / bln</td>
+                  <td class="price" style="color:#C084FC;">IDR 84.000.000 (Grand Total Rp 93.24M)</td>
+                </tr>
+                <tr>
+                  <td class="proj-name">Kapasitas Email Promo / Bln</td>
+                  <td>25.000 emails</td>
+                  <td>100.000 emails</td>
+                  <td>🚀 250.000 emails</td>
+                  <td>🚀 UNLIMITED</td>
+                </tr>
+                <tr>
+                  <td class="proj-name">Promotional AI Agents</td>
+                  <td>2 Agents</td>
+                  <td>4 Agents</td>
+                  <td>Full 5 Agents</td>
+                  <td>Full 5 Agents</td>
+                </tr>
+                <tr>
+                  <td class="proj-name">Weather Autopilot AI</td>
+                  <td>11 AM Lunch Only</td>
+                  <td>OpenWeather API</td>
+                  <td>Full Autopilot</td>
+                  <td>Full Autopilot</td>
+                </tr>
+                <tr>
+                  <td class="proj-name">Official WhatsApp Meta Broadcast</td>
+                  <td>✓ Included</td>
+                  <td>✓ Included</td>
+                  <td>✓ Full WA Meta Blast</td>
+                  <td>✓ Full Custom Engine</td>
+                </tr>
+                <tr>
+                  <td class="proj-name">Dormant Win-Back AI</td>
+                  <td>-</td>
+                  <td>✓ Member Win-Back</td>
+                  <td>✓ Full WA Meta Blast</td>
+                  <td>✓ Full Custom Engine</td>
+                </tr>
+                <tr>
+                  <td class="proj-name">Anti-Spam &amp; Server Pool</td>
+                  <td>Standard IP</td>
+                  <td>Dedicated IP</td>
+                  <td>Dedicated Pool</td>
+                  <td>Privat VPC Server Klien</td>
+                </tr>
+                <tr>
+                  <td class="proj-name">Dukungan SLA Maintenance</td>
+                  <td>1 Bulan Free SLA</td>
+                  <td>1 Bulan Free SLA</td>
+                  <td>Priority Fleek Squad 24/7</td>
+                  <td>Retainer Rp 8.5M/bln (Opsional)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 10: Email Blasting Single Offer -->
+    <section id="emailblast" class="slide-panel">
+      <div class="section-content">
+        <span class="sect-meta">// SYS_FINANCIAL: RINGKASAN MATRIX</span>
+        <div class="project-header">
+          <div class="quotation-badge" style="margin-bottom: 1rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            <span>OFFICIAL COMMERCIAL PROPOSAL // KAWAN LAMA GROUP</span>
+          </div>
+          <h2 class="project-name animate-text">TABEL RINGKASAN LAYANAN &amp; INVESTASI</h2>
+        </div>
+        
+        <div class="table-wrapper-container" style="max-width: 900px; margin: 0 auto;">
+          <div class="table-wrapper cyber-decor">
+            <table class="cyber-table">
+              <thead>
+                <tr>
+                  <th style="width: 35%;">ITEM SPESIFIKASI LAYANAN</th>
+                  <th style="width: 45%;">RINCIAN DELIVERABLES</th>
+                  <th style="width: 20%;">KETERANGAN SKEMA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="proj-name">KAPASITAS EMAIL BLASTING / BULAN</td>
+                  <td>60.000 emails / bulan</td>
+                  <td><span class="pricing-tier-tag pro">INCLUDED</span></td>
+                </tr>
+                <tr>
+                  <td class="proj-name">AI PROMO COPYWRITER GENERATOR</td>
+                  <td>Input brief promo -> AI otomatis buat teks email &amp; subject line</td>
+                  <td><span class="pricing-tier-tag pro">INCLUDED (NO TEMPLATE RUMIT)</span></td>
+                </tr>
+                <tr>
+                  <td class="proj-name">GARANSI TABUNGAN KUOTA ROLLOVER</td>
+                  <td>Sisa kuota Bln 1 yang belum habis/gagal otomatis diakumulasikan ke Bln 2</td>
+                  <td><span class="pricing-tier-tag ultimate">100% ANTI-HANGUS</span></td>
+                </tr>
+                <tr>
+                  <td class="proj-name">INFRASTRUKTUR CLEAN DELIVERY</td>
+                  <td>DNS Setup (SPF, DKIM, DMARC) &amp; Dedicated Email Relay</td>
+                  <td><span class="pricing-tier-tag pro">100% INBOX SAFEGUARD</span></td>
+                </tr>
+                <tr>
+                  <td class="proj-name" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">INVESTASI BIAYA LANGGANAN BULANAN</td>
+                  <td style="padding-top: 1.5rem; padding-bottom: 1.5rem;"><span style="color:#4ADE80; font-weight:bold; font-size:1.1rem;">Rp 5.000.000 / bulan</span></td>
+                  <td style="padding-top: 1.5rem; padding-bottom: 1.5rem;"><span class="pricing-tier-tag pro">MANAGED SERVICE</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 11: Signed -->
+    <section id="signed" class="slide-panel">
+      <div class="section-content">
+        <span class="sect-meta">// SYS_AUTHENTICATOR: PENGESAHAN</span>
+        <div class="project-header">
+          <span class="project-tag">Lembar Pengesahan</span>
+          <h2 class="project-name animate-text">Persetujuan Penawaran Harga</h2>
+        </div>
+        
+        <div class="signed-container">
+          <p class="signed-client-target">Dipersiapkan Untuk: <span>PT Foods Beverages Indonesia (Gedung Kawan Lama)</span></p>
+          
+          <div class="signed-signatures">
+            <!-- Signature Fleek -->
+            <div class="signature-box cyber-decor">
+              <div class="sig-header">Penyedia Solusi (PT Fleek Group Indonesia)</div>
+              <div class="sig-space" style="font-family:monospace; color:var(--home-accent);">[ E-SIGN VERIFIED // 2026-07-29 ]</div>
+              <div class="sig-info">
+                <h5>Aziz Nur Ramadhan / Alif Yusfan M.</h5>
+                <p>CEO / Account Executive</p>
+                <span class="company">PT Fleek Group Indonesia</span>
+              </div>
+            </div>
+            
+            <!-- Signature Client -->
+            <div class="signature-box cyber-decor">
+              <div class="sig-header">Disetujui Oleh (Kawan Lama Group)</div>
+              <div class="sig-space">[ TANDA TANGAN / STAMP APPROVAL ]</div>
+              <div class="sig-info">
+                <h5 id="clientRepSig">Arianti Setiarini</h5>
+                <p id="clientJobSig">Executive Management</p>
+                <span class="company" id="clientCompanySig">PT Foods Beverages Indonesia (F&amp;B ID)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 11: IT Team Brief (Locked Passcode fleek) -->
+    <section id="itbrief" class="slide-panel section-it-brief">
+      <div class="section-content">
+        <span class="sect-meta">// SYS_SECURITY: INTERNAL ENGINEERING NOTE</span>
+        
+        <!-- Lock Screen Card -->
+        <div id="terminalLockScreen" class="lock-terminal cyber-decor">
+          <div class="terminal-header">
+            <span class="terminal-status-dot"></span>
+            <span>FLEEK SECURITY TERMINAL v1.0.8 // KAWAN LAMA ENGINE</span>
+          </div>
+          <p class="terminal-prompt">Masukkan kode sandi internal tim IT Fleek untuk membocorkan rincian arsitektur teknis:</p>
+          <div class="terminal-input-wrapper">
+            <input type="password" id="passcodeInput" class="terminal-input" placeholder="••••" maxlength="8">
+            <button id="unlockBtn" class="btn-cyber">Buka Akses</button>
+          </div>
+          <div id="errorMessage" class="terminal-error-msg">Kode Sandi Tidak Cocok. Akses Ditolak.</div>
+          <p style="font-size: 0.72rem; color: var(--home-fg-3); text-align: center; margin-top: 0.4rem;">
+            Petunjuk: Kode sandi standar internal adalah <strong>fleek</strong>
+          </p>
+        </div>
+
+        <!-- Unlocked Content (IT Team Brief) -->
+        <div id="itUnlockedContent" class="it-brief-content">
+          <div class="it-brief-unlocked-header">
+            <h3>F&amp;B Indonesia Engineering &amp; Deployment Brief</h3>
+            <span>STATUS: ACCESS GRANTED // CREDENTIAL VERIFIED</span>
+          </div>
+
+          <div class="it-grid">
+            <!-- Tech Stack & Dependencies -->
+            <div class="it-card cyber-decor">
+              <h4 class="it-card-title">1. Technical Stack &amp; Dependencies</h4>
+              <p style="font-size: 0.85rem; color: var(--home-fg-2); margin-bottom: 0.8rem;">
+                Spesifikasi tumpukan teknologi (stack) resmi yang digunakan untuk deployment Fleek Engine F&amp;B Indonesia:
+              </p>
+              <div class="it-tech-stack">
+                <span class="tech-tag">Next.js 14 / Edge API</span>
+                <span class="tech-tag">Meta WABA API v2.0</span>
+                <span class="tech-tag">OpenWeatherMap API</span>
+                <span class="tech-tag">Gemini LLM</span>
+                <span class="tech-tag">PostgreSQL / Supabase</span>
+                <span class="tech-tag">Resend SMTP Relay</span>
+              </div>
+              <p style="font-size: 0.75rem; color: var(--home-fg-2); margin-top: 0.8rem;">
+                * Catatan: Edge Functions digunakan untuk pengiriman broadcast resmi Meta WABA &amp; weather blast.
+              </p>
+            </div>
+
+            <!-- Database Schema -->
+            <div class="it-card cyber-decor">
+              <h4 class="it-card-title">2. Database Schema (Draft)</h4>
+              <p style="font-size: 0.85rem; color: var(--home-fg-2); margin-bottom: 0.4rem;">
+                Tabel database internal untuk menyimpan data transaksi POS, lokasi member, &amp; trigger cuaca:
+              </p>
+              <pre>
+CREATE TABLE fbid_members (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(150) UNIQUE,
+  phone_wa VARCHAR(20),
+  last_pos_transaction TIMESTAMP,
+  dormant_days INT DEFAULT 0
+);
+
+CREATE TABLE pos_transactions_log (
+  id SERIAL PRIMARY KEY,
+  member_id INT REFERENCES fbid_members(id),
+  brand_name VARCHAR(50), -- Chatime / Cupbop / Gindaco
+  amount_idr NUMERIC(12,2),
+  created_at TIMESTAMP DEFAULT NOW()
+);</pre>
+            </div>
+
+            <!-- API Endpoint Specs -->
+            <div class="it-card cyber-decor">
+              <h4 class="it-card-title">3. API Router Triggers</h4>
+              <p style="font-size: 0.85rem; color: var(--home-fg-2); margin-bottom: 0.4rem;">
+                Endpoint serverless routing yang menangani integrasi POS &amp; Official WA Meta Marketing Broadcast:
+              </p>
+              <pre>
+// POST /api/v1/pos/transaction-sync
+{
+  "member_id": "MEM_99182",
+  "brand": "Chatime",
+  "total_idr": 85000,
+  "branch_city": "Jakarta"
+}
+
+// POST /api/v1/wa/meta-marketing-broadcast
+{
+  "campaign_name": "Chatime Weekend Treat",
+  "media_type": "IMAGE_POSTER",
+  "template_name": "promo_buy1get1_large",
+  "cta_button": "ORDER_NOW"
+}</pre>
+            </div>
+
+            <!-- Deployment Checklist -->
+            <div class="it-card cyber-decor">
+              <h4 class="it-card-title">4. Vercel &amp; Production Checklist</h4>
+              <ul class="project-features" style="font-size: 0.8rem; color: var(--home-fg-2);">
+                <li>Pastikan Environment Variables (`OPENWEATHER_API_KEY`, `META_WABA_TOKEN`, `RESEND_API_KEY`) sudah ter-config di dashboard Vercel.</li>
+                <li>Set up DNS records (SPF: `v=spf1 include:fleek.io ~all`, DKIM 2048-bit, DMARC `p=reject`) untuk domain `@fbindonesia.co.id`.</li>
+                <li>Konfigurasi Vercel Cron (`vercel.json`) untuk menjalankan pemicu evaluasi cuaca &amp; dormant member setiap jam 08:00 WIB.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Toast Notification Feedback Container -->
+  <div id="deckToast" class="deck-toast-notification"></div>
+
+  <!-- Load Anime.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <!-- Load Application logic -->
+  <script src="app.js"></script>
+</body>
+</html>
