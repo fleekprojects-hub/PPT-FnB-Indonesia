@@ -2205,3 +2205,17 @@ body {
     display: block !important;
   }
 }
+
+/* Client Marquee Logo Styles */
+.marquee-client-logo {
+  height: 45px;
+  object-fit: contain;
+  margin: 0 40px;
+  opacity: 0.8;
+  filter: grayscale(100%) brightness(200%);
+  transition: all 0.3s ease;
+}
+.marquee-client-logo:hover {
+  filter: grayscale(0%) brightness(100%);
+  opacity: 1;
+}
